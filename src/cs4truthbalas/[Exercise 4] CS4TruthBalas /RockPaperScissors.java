@@ -28,7 +28,7 @@ public class RockPaperScissors {
 					boolean startGame = true;
 					while(startGame) {
 						int random = (int) Math.floor(Math.random()*3) + 1;
-						Move computerMove = new Move("computerMove");
+						Move computerMove = null;
 
 						switch(random) {
 							case 1:
@@ -44,7 +44,7 @@ public class RockPaperScissors {
 						System.out.println("\nThis match will be first to " + roundsToWin + " wins." + "\nThe computer has selected its move. Select your move: " + "\n1. Rock" + "\n2. Paper" + "\n3. Scissors");
 
 						int move = input.nextInt();
-						Move playerMove = new Move("playerMove");
+						Move playerMove = null;
 
 						switch(move) {
 							case 1:
